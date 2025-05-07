@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Моё резюме</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="resume-container">
+        <header class="resume-header">
+            <img src="фото.jpg" alt="Фото профиля" class="profile-img">
+            <h1 id="firstName">Котов</h1>
+            <h2 id="lastName">Дмитрий</h2>
+        </header>
+
+        <section class="resume-section">
+            <h3>Обо мне</h3>
+            <p>Фронтенд-разработчик с опытом создания современных веб-приложений.</p>
+        </section>
+
+        <section class="resume-section">
+            <h3>Навыки</h3>
+            <ul>
+                <li>HTML/CSS</li>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Git</li>
+            </ul>
+        </section>
+
+        <section class="interactive-section">
+            <div class="input-group">
+                <input type="text" id="lastNameInput" placeholder="Введите новую фамилию">
+                <button onclick="changeLastName()">Изменить фамилию</button>
+            </div>
+
+            <button onclick="changeBgColor()" class="color-btn">Сменить цвет фона</button>
+            <button onclick="askAge()" class="age-btn">Проверить возраст</button>
+        </section>
+    </div>
+
+    <script src="fun.js"></script>
+</body>
+
+</html>
