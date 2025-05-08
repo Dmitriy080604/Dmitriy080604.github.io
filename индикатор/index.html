@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Стрелочный индикатор</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Введите число (0–9):</h2>
+        <input type="range" id="range" min="0" max="9" value="0" disabled>
+
+        <div class="buttons">
+            <button onclick="setValue(0)">0</button>
+            <button onclick="setValue(1)">1</button>
+            <button onclick="setValue(2)">2</button>
+            <button onclick="setValue(3)">3</button>
+            <button onclick="setValue(4)">4</button>
+            <button onclick="setValue(5)">5</button>
+            <button onclick="setValue(6)">6</button>
+            <button onclick="setValue(7)">7</button>
+            <button onclick="setValue(8)">8</button>
+            <button onclick="setValue(9)">9</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
